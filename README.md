@@ -33,7 +33,7 @@ Generate a morphing animation video sequence
 python3 code/__init__.py --img1 images/aligned_images/jennie.png --img2 images/aligned_images/rih.png --output output.mp4
 ```
 
-![Morphed Video](output.gif)
+![Morphed Video](results/output.gif)
 
 #### Test with your own images
 
@@ -54,9 +54,9 @@ Key Features
 
 More Results
 -------------
-![Morphed Video](final-club-final.gif)
+![Morphed Video](results/final-club-final.gif)
 
-![Morphed Video](ld-final.gif)
+![Morphed Video](results/ld-final.gif)
 
 
 To Do
