@@ -124,9 +124,7 @@ def generate_face_correspondences(theImage1, theImage2):
             currList.append((1,(size[0]-1)//2))
             currList.append(((size[1]-1)//2,size[0]-1))
             currList.append((size[1]-1,size[0]-1))
-            currList.append(((size[1]-1)//2,(size[0]-1)//2))
-
-        cv2.imwrite("test.png", img)
+            currList.append(((size[1]-1),(size[0]-1)//2))
 
     # Add back the background
     narray = corresp/2
@@ -137,6 +135,6 @@ def generate_face_correspondences(theImage1, theImage2):
     narray = np.append(narray,[[1,(size[0]-1)//2]],axis=0)
     narray = np.append(narray,[[(size[1]-1)//2,size[0]-1]],axis=0)
     narray = np.append(narray,[[size[1]-1,size[0]-1]],axis=0)
-    narray = np.append(narray,[[(size[1]-1)//2,(size[0]-1)//2]],axis=0)
+    narray = np.append(narray,[[(size[1]-1),(size[0]-1)//2]],axis=0)
     
     return [size,imgList[0],imgList[1],list1,list2,narray]

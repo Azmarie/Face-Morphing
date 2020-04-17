@@ -92,13 +92,13 @@ def generate_morph_sequence(duration,frame_rate,img1,img2,points1,points2,tri_li
             # Morph one triangle at a time.
             morph_triangle(img1, img2, morphed_frame, t1, t2, t, alpha)
             
-            # pt1 = (int(t[0][0]), int(t[0][1]))
-            # pt2 = (int(t[1][0]), int(t[1][1]))
-            # pt3 = (int(t[2][0]), int(t[2][1]))
+            pt1 = (int(t[0][0]), int(t[0][1]))
+            pt2 = (int(t[1][0]), int(t[1][1]))
+            pt3 = (int(t[2][0]), int(t[2][1]))
 
-            # cv2.line(morphed_frame, pt1, pt2, (255, 255, 255), 1, 8, 0)
-            # cv2.line(morphed_frame, pt2, pt3, (255, 255, 255), 1, 8, 0)
-            # cv2.line(morphed_frame, pt3, pt1, (255, 255, 255), 1, 8, 0)
+            cv2.line(morphed_frame, pt1, pt2, (255, 255, 255), 1, 8, 0)
+            cv2.line(morphed_frame, pt2, pt3, (255, 255, 255), 1, 8, 0)
+            cv2.line(morphed_frame, pt3, pt1, (255, 255, 255), 1, 8, 0)
             
         res = Image.fromarray(cv2.cvtColor(np.uint8(morphed_frame), cv2.COLOR_BGR2RGB))
         res.save(p.stdin,'JPEG')

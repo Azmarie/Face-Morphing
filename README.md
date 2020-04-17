@@ -48,9 +48,15 @@ This will look for faces in the images - crop out, align (center the nose and ma
 Key Features
 -------------
 1. Detect and **auto align faces** in images (Optional for face morphing) 
-2. Generate point correspondences between the two images using Dlib's Facial Landmark Detection
-3. Calculate the **triangular mesh** with Delaunay Triangulation for each interdemiate shape
-4. Warp the two input images towards the interdemiate shape, perform **cross-dissolve** and obtain intermediate images each frame
+2. Generate **corresponding features points** between the two images using Dlib's Facial Landmark Detection
+3. Calculate the **triangular mesh** with Delaunay Triangulation for each intermediate shape
+4. Warp the two input images towards the intermediate shape, perform **cross-dissolve** and obtain intermediate images each frame
+
+More Results
+-------------
+![Morphed Video](final-club-final.gif)
+
+![Morphed Video](ld-final.gif)
 
 
 To Do

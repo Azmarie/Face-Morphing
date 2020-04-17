@@ -23,3 +23,5 @@ for frame_number in range(num):
 gif1.close()
 gif2.close()    
 new_gif.close()
+
+# convert -delay 0 -loop 0 output.gif loopingImage.gif
