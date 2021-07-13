@@ -67,7 +67,7 @@ def crop_image_help(img1,img2):
         return [img1[diff0:avg0,:],img2[:,-diff1:avg1]]
 
     else:
-        return [img1[:,diff1:avg1],img2[-diff0:avg0,:]]
+        return [img1[:,diff1:avg1],img2[diff0:avg0,:]]
 
 def generate_face_correspondences(theImage1, theImage2):
     # Detect the points of face.
