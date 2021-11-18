@@ -14,6 +14,8 @@ scikit_image
 opencv_python
 Pillow
 skimage
+imutils
+cmake
 dlib
 ```
 
