@@ -15,6 +15,7 @@ opencv_python
 Pillow
 skimage
 imutils
+face_utils
 cmake
 dlib
 ```
