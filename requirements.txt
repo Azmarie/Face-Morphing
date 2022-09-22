@@ -1,0 +1,16 @@
+dlib @ git+https://github.com/davisking/dlib.git@dd1ec1fcff9479b00b233755aa673c028004d96d
+ffmpeg==1.4
+ffmpeg-python==0.2.0
+future==0.18.2
+imageio==2.22.0
+imutils==0.5.4
+networkx==2.8.6
+numpy==1.23.3
+opencv-python==4.6.0.66
+packaging==21.3
+Pillow==9.2.0
+pyparsing==3.0.9
+PyWavelets==1.4.1
+scikit-image==0.19.3
+scipy==1.9.1
+tifffile==2022.8.12
